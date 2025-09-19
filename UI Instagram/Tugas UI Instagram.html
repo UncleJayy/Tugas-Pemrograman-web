@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas bikin UI Instagram</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-white shadow-sm px-4 py-2 flex justify-between items-center">
+    <a class="navbar-brand font-bold text-2xl" href="#">Instagram</a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <div class="flex gap-4 items-center">
+      <button class="btn btn-outline-primary">Home</button>
+      <button class="btn btn-outline-secondary">Messages</button>
+      <img src="profile.png" alt="Profile" class="rounded-full w-8 h-8 border">
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mx-auto mt-6 flex flex-col md:flex-row gap-8">
+    <!-- Left: Feed -->
+    <div class="w-full md:w-2/3">
+      <!-- Stories -->
+      <div class="flex gap-4 mb-6 overflow-x-auto">
+        <div class="flex flex-col items-center">
+          <img src="profile.png" class="rounded-full border-4 border-pink-500 w-16 h-16" alt="Story">
+          <span class="text-xs mt-1">Your Story</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="pict1.png" class="rounded-full border-4 border-pink-500 w-16 h-16" alt="Story">
+          <span class="text-xs mt-1">dzrt</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="pict.png" class="rounded-full border-4 border-pink-500 w-16 h-16" alt="Story">
+          <span class="text-xs mt-1">emma</span>
+        </div>
+        <!-- Add more stories as needed -->
+      </div>
+      <!-- Posts -->
+      <div class="card mb-4">
+        <div class="card-header flex items-center gap-2">
+          <img src="profile.png" class="rounded-full w-8 h-8 border" alt="User">
+          <span class="font-semibold">jayy_jazy</span>
+        </div>
+        <img src="post.png" class="card-img-top" alt="Post">
+        <div class="card-body">
+          <div class="flex gap-4 mb-2">
+            <button class="btn btn-link p-0"><i class="bi bi-heart"></i> Like</button>
+            <button class="btn btn-link p-0"><i class="bi bi-chat"></i> Comment</button>
+            <button class="btn btn-link p-0"><i class="bi bi-send"></i> Share</button>
+          </div>
+          <p class="card-text"><span class="font-bold">jayy_jazy</span> Enjoying the view!</p>
+        </div>
+      </div>
+      <!-- Add more posts as needed -->
+    </div>
+
+    <!-- Right: Sidebar -->
+    <div class="w-full md:w-1/3">
+      <div class="card mb-4">
+        <div class="card-body flex items-center gap-3">
+          <img src="profile.png" class="rounded-full w-12 h-12 border" alt="Profile">
+          <div>
+            <div class="font-bold">jayy_jazy</div>
+            <div class="text-sm text-gray-500"></div>
+          </div>
+          <button class="btn btn-link ms-auto">Switch</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header font-bold">Suggestions For You</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item flex items-center gap-3">
+            <img src="pict.png" class="rounded-full w-8 h-8 border" alt="User">
+            <span class="font-semibold">emma</span>
+            <button class="btn btn-link ms-auto">Follow</button>
+          </li>
+          <li class="list-group-item flex items-center gap-3">
+            <img src="pict1.png" class="rounded-full w-8 h-8 border" alt="User">
+            <span class="font-semibold">dzrt</span>
+            <button class="btn btn-link ms-auto">Follow</button>
+          </li>
+          <!-- Add more suggestions as needed -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (for icons, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
